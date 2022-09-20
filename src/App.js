@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -47,6 +46,15 @@ function App() {
     <div className="App">
       <header className="App-header">
         Last Updated - {updated}
+        <br />
+        <br />
+
+        <div>
+          <div>Always small</div>
+          <div className='desktop'>Big Desktop</div>
+          <div className='tablet'>Big Tablet</div>
+          <div className='docked'>Big Docked</div>
+        </div>
         <br />
         <br />
         {JSON.stringify(window.matchMedia("(pointer: coarse)").media)}-
