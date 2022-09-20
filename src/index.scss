@@ -13,7 +13,7 @@ code {
 }
 
 // Docked Tablet
-@media (pointer: coarse) {
+@media (pointer: coarse) and (hover: hover) and (any-hover: hover) {
   .docked {
     color: red;
     zoom: 1.3;
@@ -21,7 +21,7 @@ code {
 }
 
 // Desktop
-@media (pointer: fine) {
+@media (pointer: fine) and (hover: hover) and (any-hover: hover) {
   .desktop {
     zoom: 2;
     color: red;
@@ -29,7 +29,7 @@ code {
 }
 
 // Tablet no docking
-@media (pointer: none) {
+@media (pointer: coarse) and (hover: none) and (any-hover: none) {
   .tablet {
     color: red;
     zoom: 1.3;
